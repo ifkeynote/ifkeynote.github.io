@@ -286,9 +286,9 @@
     color:var(--text); text-decoration:none;
     background:var(--surface-strong); border:1px solid var(--border-strong);
   }
-  .btn-row{ display:flex; justify-content:center; flex-wrap:wrap; gap:8px; }
-  .btn-row .biz-btn:hover, .btn-row .biz-btn:focus-visible{ border-color:var(--accent); }
-  .biz-btn.blog b{ color:#03c75a; font-weight:900; }
+  .top-actions{ align-items:flex-start; }
+  .icon-stack{ display:flex; flex-direction:column; gap:10px; }
+  .icon-stack .icon-btn svg{ display:block; }
   .biz-mail{ margin:8px 0 0; font-size:12px; color:var(--text-dim); user-select:all; }
   .hint{ text-align:center; color:var(--text-dim); font-size:12.5px; margin:-8px 0 16px; }
 </style>
@@ -303,7 +303,10 @@
 <div class="wrap">
   <div class="top-actions">
     <button class="icon-btn" id="share" type="button" aria-label="이 페이지 공유하기">↗</button>
-    <a class="icon-btn" href="https://www.instagram.com/if.keynote/" target="_blank" rel="noopener" aria-label="인스타그램 이프키노트">◎</a>
+    <div class="icon-stack">
+      <a class="icon-btn" href="https://www.instagram.com/if.keynote/" target="_blank" rel="noopener" aria-label="인스타그램 이프키노트"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><defs><radialGradient id="igg" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#fdf497"/><stop offset=".05" stop-color="#fdf497"/><stop offset=".45" stop-color="#fd5949"/><stop offset=".6" stop-color="#d6249f"/><stop offset=".9" stop-color="#285AEB"/></radialGradient></defs><rect x="1" y="1" width="22" height="22" rx="6.5" fill="url(#igg)"/><rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.1" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.3" cy="7.7" r="1" fill="#fff"/></svg></a>
+      <a class="icon-btn blog-icon" href="https://blog.naver.com/skimforyou" target="_blank" rel="noopener" aria-label="네이버 블로그"><svg viewBox="0 0 32 28" width="26" height="23" aria-hidden="true"><path fill="#03C75A" d="M6 1h20a5 5 0 0 1 5 5v11a5 5 0 0 1-5 5h-7l-3 5-3-5H6a5 5 0 0 1-5-5V6a5 5 0 0 1 5-5z"/><text x="16" y="15.6" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">blog</text></svg></a>
+    </div>
   </div>
   <header>
     <div class="orbit">
@@ -314,10 +317,7 @@
     <h1>우주 꿀템</h1>
     <p class="store-name"><a href="https://influencers.coupang.com/s/ifkeynote" target="_blank" rel="noopener sponsored"><b>이프키노트 스토어</b></a> · <a href="https://www.instagram.com/if.keynote/" target="_blank" rel="noopener">@if.keynote</a></p>
     <p class="sub">이프키노트 영상 속 그 아이템,<br>번호로 찾아 바로 구경하세요</p>
-    <div class="btn-row">
-      <a class="biz-btn" href="mailto:if.keynote@gmail.com?subject=%5B%ED%98%91%EC%B0%AC%20%EB%AC%B8%EC%9D%98%5D%20">✉ 비즈니스 제안</a>
-      <a class="biz-btn blog" href="https://blog.naver.com/skimforyou" target="_blank" rel="noopener"><b>N</b> 네이버 블로그</a>
-    </div>
+    <a class="biz-btn" href="mailto:if.keynote@gmail.com?subject=%5B%ED%98%91%EC%B0%AC%20%EB%AC%B8%EC%9D%98%5D%20">✉ 비즈니스 제안</a>
     <p class="biz-mail">if.keynote@gmail.com</p>
   </header>
 
