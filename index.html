@@ -277,6 +277,9 @@
     padding:5px 12px; border-radius:999px;
   }
   .store-name b{ color:var(--accent); }
+  .store-name a{ color:inherit; text-decoration:none; }
+  .store-name a:hover, .store-name a:focus-visible{ text-decoration:underline; text-underline-offset:3px; }
+  .store-name b::after{ content:" ↗"; font-size:11px; }
   .biz-btn{
     display:inline-flex; align-items:center; gap:7px; margin-top:14px;
     padding:9px 16px; border-radius:12px; font-size:13.5px; font-weight:700;
@@ -306,7 +309,7 @@
       <div class="planet"><img src="tiger.png" alt="이프키노트 호랑이"></div>
     </div>
     <h1>우주 꿀템</h1>
-    <p class="store-name"><b>이프키노트 스토어</b> · @if.keynote</p>
+    <p class="store-name"><a href="https://influencers.coupang.com/s/ifkeynote" target="_blank" rel="noopener sponsored"><b>이프키노트 스토어</b></a> · <a href="https://www.instagram.com/if.keynote/" target="_blank" rel="noopener">@if.keynote</a></p>
     <p class="sub">이프키노트 영상 속 그 아이템,<br>번호로 찾아 바로 구경하세요</p>
     <a class="biz-btn" href="mailto:if.keynote@gmail.com?subject=%5B%ED%98%91%EC%B0%AC%20%EB%AC%B8%EC%9D%98%5D%20">✉ 비즈니스 제안</a>
     <p class="biz-mail">if.keynote@gmail.com</p>
